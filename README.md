@@ -38,7 +38,8 @@ The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition]
 | rating                  | Rating                                  | FLOAT(2, 1)    |
 
 ## Project Structure
- Walmart-Sales-Analysis-SQL-PowerBI/
+```text
+Walmart-Sales-Analysis-SQL-PowerBI/
 │
 ├── Dataset/
 │   └── walmart_sales.csv
@@ -53,7 +54,7 @@ The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition]
 │   └── dashboard_screenshot.png
 │
 └── README.md
-
+```
 ## Tools & Technologies
 - SQL (Data Cleaning & Analysis)
 - Power BI (Dashboard Development)
@@ -116,7 +117,6 @@ The interactive dashboard includes:
 
 Aspiring Data Scientist | SQL | Power BI | Machine Learning
 
-GitHub: https://github.com/your-username
-LinkedIn: www.linkedin.com/in/shiva-gupta-63b277375
-GitHub: 
+- GitHub: https://github.com/Shivagupta9679/Walmart-Sales-Analysis-SQL-PowerBI
+- LinkedIn: www.linkedin.com/in/shiva-gupta-63b277375 
   
