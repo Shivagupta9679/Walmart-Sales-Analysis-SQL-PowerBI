@@ -1,5 +1,6 @@
 # Walmart-Sales-Analysis-SQL-PowerBI
-## About
+
+## Project Overview
 This project explores Walmart Sales data to understand top-performing 
 branches and products, sales trends, and customer behaviour using 
 SQL queries and Power BI dashboard. The aim is to study how sales 
@@ -36,8 +37,30 @@ The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition]
 | gross_income            | Gross Income                            | DECIMAL(10, 2) |
 | rating                  | Rating                                  | FLOAT(2, 1)    |
 
-##  Approach Used 
+## Project Structure
+ Walmart-Sales-Analysis-SQL-PowerBI/
+│
+├── Dataset/
+│   └── walmart_sales.csv
+│
+├── SQL/
+│   └── walmart_analysis.sql
+│
+├── Dashboard/
+│   └── Walmart_Sales_Dashboard.pbix
+│
+├── Images/
+│   └── dashboard_screenshot.png
+│
+└── README.md
 
+## Tools & Technologies
+- SQL (Data Cleaning & Analysis)
+- Power BI (Dashboard Development)
+- Excel (Data Preparation)
+- GitHub (Version Control)
+
+##  Approach Used 
 ### 1. Data Wrangling
 - Built database and created table
 - Inserted data with NOT NULL constraints
@@ -52,7 +75,7 @@ New columns created from existing data:
 ### 3. Exploratory Data Analysis (EDA)
 SQL queries written to answer all business questions listed below.
 
-## Analysis List
+## SQL Analysis List
 
 ### 1. Product Analysis
 Analyzed different product lines to identify best and 
@@ -67,80 +90,7 @@ to increase sales.
 Uncovered different customer segments, purchase trends, 
 and profitability of each customer segment.
 
-## Business Questions To Answer
-### Generic Question
-
-1. How many unique cities does the data have?
-2. In which city is each branch?
-
-### Product
-
-1. How many unique product lines does the data have?
-2. What is the most common payment method?
-3. What is the most selling product line?
-4. What is the total revenue by month?
-5. What month had the largest COGS?
-6. What product line had the largest revenue?
-5. What is the city with the largest revenue?
-6. What product line had the largest VAT?
-7. Fetch each product line and add a column to those product line showing "Good", "Bad". Good if its greater than average sales
-8. Which branch sold more products than average product sold?
-9. What is the most common product line by gender?
-12. What is the average rating of each product line?
-
-### Sales
-
-1. Number of sales made in each time of the day per weekday
-2. Which of the customer types brings the most revenue?
-3. Which city has the largest tax percent/ VAT (**Value Added Tax**)?
-4. Which customer type pays the most in VAT?
-
-### Customer
-
-1. How many unique customer types does the data have?
-2. How many unique payment methods does the data have?
-3. What is the most common customer type?
-4. Which customer type buys the most?
-5. What is the gender of most of the customers?
-6. What is the gender distribution per branch?
-7. Which time of the day do customers give most ratings?
-8. Which time of the day do customers give most ratings per branch?
-9. Which day fo the week has the best avg ratings?
-10. Which day of the week has the best average ratings per branch?
-
-
-## Revenue And Profit Calculations
-
-$ COGS = unitsPrice * quantity $
-
-$ VAT = 5\% * COGS $
-
-$VAT$ is added to the $COGS$ and this is what is billed to the customer.
-
-$ total(gross_sales) = VAT + COGS $
-
-$ grossProfit(grossIncome) = total(gross_sales) - COGS $
-
-**Gross Margin** is gross profit expressed in percentage of the total(gross profit/revenue)
-
-$ \text{Gross Margin} = \frac{\text{gross income}}{\text{total revenue}} $
-
-<u>**Example with the first row in our DB:**</u>
-
-**Data given:**
-
-- $ \text{Unite Price} = 45.79 $
-- $ \text{Quantity} = 7 $
-
-$ COGS = 45.79 * 7 = 320.53 $
-
-$ \text{VAT} = 5\% * COGS\\= 5\%  320.53 = 16.0265 $
-
-$ total = VAT + COGS\\= 16.0265 + 320.53 = $336.5565$
-
-$ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenue}}\\=\frac{16.0265}{336.5565} = 0.047619\\\approx 4.7619\% $
-
-##  Power BI Dashboard
+##  Power BI Dashboard Feature
 The interactive dashboard includes:
 - Total Revenue,Rating,Quantity Sold and Average Transaction
 - Sales by Branch & City
@@ -150,6 +100,23 @@ The interactive dashboard includes:
 - Monthly Revenue Trend
 - Payment Method Breakdown
 
-  ## Code
+ ## Dashboard Preview
+  <img width="1327" height="743" alt="Screenshot 2026-06-19 161130" src="https://github.com/user-attachments/assets/5ed56b7e-7401-4609-b849-b626b033d6bf" />
 
+ ##  Key Insights
+- **Branch C** generated the highest total revenue
+- **Food & Beverages** was the top-selling product line
+- **Evening hours (6–9 PM)** had the highest footfall
+- **E-wallet** was the most preferred payment method
+- **Member customers** spent more on average than Normal customers
+ 
+## Author
+
+**Shiva Gupta**
+
+Aspiring Data Scientist | SQL | Power BI | Machine Learning
+
+GitHub: https://github.com/your-username
+LinkedIn: www.linkedin.com/in/shiva-gupta-63b277375
+GitHub: 
   
